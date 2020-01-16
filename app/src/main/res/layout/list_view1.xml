@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="android.widget.TextView"></import>
+        <variable
+            name="password"
+            type="com.example.passwordstoreapp2.Password" />
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ID"
+            android:text='@{"ID: "+Long.toString(password.id)}'
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/IDTextviewHeight"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ListIDTextMarginTop"
+            android:layout_marginLeft="7dp"
+            android:hint="@string/id"
+            android:textSize="@dimen/ListTextSize"
+            android:layout_toRightOf="@id/tvName"
+
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:text="@{password.name}"
+            android:layout_width="@dimen/ListTextWidth"
+            android:layout_height="@dimen/FieldTextviewHeight"
+            android:layout_alignParentTop="true"
+            android:hint="@string/nameHint"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/ListTextSize"
+            android:layout_toRightOf="@id/nameField"
+            android:layout_marginLeft="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:text="@{password.login}"
+            android:layout_width="@dimen/ListTextWidth"
+            android:layout_height="@dimen/FieldTextviewHeight"
+            android:layout_below="@+id/tvName"
+            android:hint="@string/loginHint"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/ListTextSize"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_alignRight="@id/tvName">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:text="@{password.password}"
+            android:layout_width="@dimen/TextViewPasswordWitdh"
+            android:layout_height="@dimen/FieldTextviewHeight"
+            android:layout_below="@id/tvLogin"
+            android:hint="@string/passwordHint"
+            android:layout_alignLeft="@id/tvName"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/ListTextSize">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/chkPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ListCheckboHeight"
+            android:layout_gravity="end"
+            android:layout_toRightOf="@+id/tvPassword"
+            android:layout_alignBottom="@+id/tvPassword">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/nameField"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ListLeftTextviewHeight"
+            android:text="@string/NameField"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/tvName"/>
+        <TextView
+            android:id="@+id/loginField"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ListLeftTextviewHeight"
+            android:text="@string/LoginField"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/tvLogin"
+            android:layout_toLeftOf="@id/tvLogin"/>
+        <TextView
+            android:id="@+id/passwordField"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ListLeftTextviewHeight"
+            android:text="@string/PasswordField"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/tvPassword"
+            android:layout_toLeftOf="@id/tvPassword"/>
+
+    </RelativeLayout>
+
+</layout>

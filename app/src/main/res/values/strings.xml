@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PasswordStoreApp</string>
+    <string name="hellowrd">Your personal password storage</string>
+    <string name="nameHint">Name</string>
+    <string name="loginHint">Login</string>
+    <string name="passwordHint">Password</string>
+    <string name="add">Add</string>
+    <string name="viewAll">View All</string>
+    <string name="ShowPass">Show password</string>
+    <string name="delete">Delete</string>
+    <string name="id">ID: </string>
+    <string name="edit">Edit</string>
+    <string name="SaveField">Save</string>
+    <string name="CancelField">Cancel</string>
+    <string name="EditAlertTitle">Edit record: </string>
+    <string name="AddAlertTitle">Add new record: </string>
+    <string name="DeleteAlertTitle">Are you really want delete record </string>
+    <string name="YesField">Yes</string>
+    <string name="NoField">No</string>
+    <string name="NameField">Name:</string>
+    <string name="LoginField">Login:</string>
+    <string name="PasswordField">Pass:</string>
+</resources>

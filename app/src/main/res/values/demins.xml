@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="FABMargin">16dp</dimen>
+    <dimen name="ListTextSize">18sp</dimen>
+    <dimen name="ChkBxTexSize">15sp</dimen>
+    <dimen name="ListTextWidth">275dp</dimen>
+    <dimen name="ListIDTextMarginTop">10dp</dimen>
+    <dimen name="TextViewPasswordWitdh">275dp</dimen>
+    <dimen name="IDTextviewHeight">20dp</dimen>
+    <dimen name="FieldTextviewHeight">24dp</dimen>
+    <dimen name="ListLeftTextviewHeight">19dp</dimen>
+    <dimen name="ListCheckboHeight">20dp</dimen>
+</resources>
